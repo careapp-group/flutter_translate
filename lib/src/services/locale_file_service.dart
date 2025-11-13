@@ -29,7 +29,9 @@ class LocaleFileService {
     final assetManifest = await AssetManifest.loadFromAssetBundle(rootBundle);
     final assets = assetManifest.listAssets();
 
-    return assets;
+    final separator = basePath.endsWith('/') ? '' : '/';
+
+    return assets.where((x) => x.startsWith('$basePath$separator')).toList();
   }
 
   static String _findLocaleFile(
