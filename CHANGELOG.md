@@ -126,3 +126,8 @@
 ## [4.1.0]
 
 - Upgraded packages and SDK version
+
+## [4.1.2]
+
+- Upgraded packages and SDK version
+- Fixed [breaking change](https://docs.flutter.dev/release/breaking-changes/asset-manifest-dot-json) from Flutter
